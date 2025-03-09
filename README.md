@@ -30,8 +30,12 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
-    </code></pre>
-    <div class="screenshot-placeholder">📌 Add screenshots of your model structure and data in the admin panel here.</div>
+</code></pre>
+<div class="screenshot-placeholder">
+    <img src="Author_Admin.png" alt="Author Admin Interface" width="800">
+    <img src="Books_Admin.png" alt="Books Admin Interface" width="800">
+    
+</div>
 </div>
 
 <div class="section">
@@ -48,24 +52,24 @@ def seed_db(n=100):
     fake = Faker()
     authors = []
 
-    for _ in range(10):
-        authors.append(Author.objects.create(
-            name=fake.name(),
-            DOB=fake.date_of_birth(minimum_age=25, maximum_age=80)
-        ))
+for _ in range(10):
+    authors.append(Author.objects.create(
+        name=fake.name(),
+        DOB=fake.date_of_birth(minimum_age=25, maximum_age=80)
+    ))
 
-    genres = ['History', 'Thriller', 'Fictional', 'Non-Fictional', 'Science-Fictional', 'Adventure', 'Dark', 'Romance']
+genres = ['History', 'Thriller', 'Fictional', 'Non-Fictional', 'Science-Fictional', 'Adventure', 'Dark', 'Romance']
 
-    for _ in range(n):
-        Book.objects.create(
-            title=fake.sentence(nb_words=4),
-            author=random.choice(authors),
-            genre=random.choice(genres),
-            publish_date=fake.date_between(start_date='-10y', end_date='today')
-        )
+for _ in range(n):
+    Book.objects.create(
+    title=fake.sentence(nb_words=4),
+    author=random.choice(authors),
+    genre=random.choice(genres),
+    publish_date=fake.date_between(start_date='-10y', end_date='today')
+    )
 
-    print(f"{n} numbers of books are created with {len(authors)} authors")
-    </code></pre>
+print(f"{n} numbers of books are created with {len(authors)} authors")
+</code></pre>
 </div>
 
 <div class="section">
@@ -148,13 +152,26 @@ def Search(request):
     </table>
 </div>
     </code></pre>
-    <div class="screenshot-placeholder">📌 Add a screenshot of the rendered search page showing the results here.</div>
+    <div class="screenshot-placeholder">
+    <img src="HTML_Page_Search.png" alt="HTML Pgae Interface" width="800">
+        
+</div>
 </div>
 
 <div class="section">
     <h2>V. Outputs</h2>
     <p>Here are examples of the search functionality in action:</p>
-    <div class="screenshot-placeholder">📌 Add screenshots of search results filtered by title, genre, or author here.</div>
+    <div class="screenshot-placeholder">
+    <img src="Genre_Search.png" alt="Genre Search" width="800">
+    <p>1.Genre Type Search</p>
+    <img src="Title_Search.png" alt="Title Search" width="800">
+    <p>2.Title Type Search</p>
+    <img src="Author_Search.png" alt="Author Search" width="800">
+    <p>3.Author Type Search</p>
+    <img src="Publication_Date.png" alt="Genre Search" width="800">
+    <p>4.Publication Date Type Search</p>
+            
+</div>
 </div>
 
 <div class="section">
