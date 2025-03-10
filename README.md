@@ -12,7 +12,7 @@
 <div class="section">
     <h2>I. Creating Models in Django</h2>
     <p>The application defines models for <code>Author</code> and <code>Book</code> to manage and store data in the database.</p>
-<pre>
+<pre><code><p>
 from django.db import models
 
 class Author(models.Model):
@@ -30,7 +30,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
-</pre>
+</p></code></pre>
 <div class="screenshot-placeholder">
     <img src="Author_Admin.png" alt="Author Admin Interface" width="800">
     <img src="Books_Admin.png" alt="Books Admin Interface" width="800">
@@ -114,7 +114,7 @@ def Search(request):
 <div class="section">
     <h2>IV. Creating the Search HTML Page</h2>
     <p>The HTML page provides an interface for users to enter search queries and displays the results dynamically. It uses Bootstrap for styling and includes a CSRF token for secure form submissions.</p>
-    <pre><code>
+<pre><code>
 <form method="get">
     {% csrf_token %}
     <div class="container-fluid m-5">
@@ -151,7 +151,7 @@ def Search(request):
         </tbody>
     </table>
 </div>
-    </code></pre>
+</code></pre>
     <div class="screenshot-placeholder">
     <img src="HTML_Page_Search.png" alt="HTML Pgae Interface" width="800">
         
