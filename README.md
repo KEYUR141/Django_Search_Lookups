@@ -166,14 +166,13 @@ The `SearchBooks.html` template provides a simple UI for searching books:
 <p>4.1 Main Page Interface.</p>
 
 
-
 ---
 ## 5. Outputs
 <img src='Genre_Search.png' width='800'>
 <p>5.1 Genre Search</p>
 <br>
 <img src='Title_Search.png' width='800'>
-<p>5.2 Genre Search</p>
+<p>5.2 Book Title Search</p>
 <br>
 <img src='Author_Search.png' width='800'>
 <p>5.3 Author Search</p>
@@ -182,6 +181,7 @@ The `SearchBooks.html` template provides a simple UI for searching books:
 <p>5.4 Publication Date Search</p>
 <br>
 
+---
 ## 6. Conclusion
 In this project, we implemented Django search lookups using `Q` objects to filter books based on title, genre, author's name, and dates. We also used the `Faker` library to populate our database with realistic data. This approach provides a flexible way to search and filter data in a Django application.
 
