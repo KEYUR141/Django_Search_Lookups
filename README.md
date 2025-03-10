@@ -169,16 +169,16 @@ The `SearchBooks.html` template provides a simple UI for searching books:
 ---
 ## 5. Outputs
 <img src='Genre_Search.png' width='800'>
-<p>5.1 Genre Search</p>
+<ul><p>5.1 Genre Search</p></ul>
 <br>
 <img src='Title_Search.png' width='800'>
-<p>5.2 Book Title Search</p>
+<ul><p>5.2 Book Title Search</p></ul>
 <br>
 <img src='Author_Search.png' width='800'>
-<p>5.3 Author Search</p>
+<u/><p>5.3 Author Search</p></ul>
 <br>
 <img src='Publication_Date.png' width='800'>
-<p>5.4 Publication Date Search</p>
+<ul><p>5.4 Publication Date Search</p></ul>
 <br>
 
 ---
