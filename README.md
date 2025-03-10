@@ -29,6 +29,7 @@ class Book(models.Model):
         return self.title
 ```
 
+
 ---
 
 ## 2. Seeding the Database with Faker
@@ -60,6 +61,10 @@ def seed_db(n=100):
         )
     print(f"{n} books created with {len(authors)} authors")
 ```
+<img src='Author_Admin' width='800'>
+<p>1.1 Author Model registered in the Django Admin.</p>
+<img src='Books_Admin' width='800'>
+<p>1.2 Books Model registered in the Django Admin</p>
 
 ---
 
@@ -157,9 +162,26 @@ The `SearchBooks.html` template provides a simple UI for searching books:
 </body>
 </html>
 ```
+<img src='HTML_Page_Search.png' width='800'>
+<p>4.1 Main Page Interface.</p>
+
+
 
 ---
+## 5. Outputs
+<img src='Genre_Search.png' width='800'>
+<p>5.1 Genre Search</p>
+<br>
+<img src='Title_Search.png' width='800'>
+<p>5.2 Genre Search</p>
+<br>
+<img src='Author_Search.png' width='800'>
+<p>5.3 Author Search</p>
+<br>
+<img src='Publication_Date.png' width='800'>
+<p>5.4 Publication Date Search</p>
+<br>
 
-## 5. Conclusion
+## 6. Conclusion
 In this project, we implemented Django search lookups using `Q` objects to filter books based on title, genre, author's name, and dates. We also used the `Faker` library to populate our database with realistic data. This approach provides a flexible way to search and filter data in a Django application.
 
