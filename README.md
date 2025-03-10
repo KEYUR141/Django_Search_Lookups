@@ -12,7 +12,7 @@
 <div class="section">
     <h2>I. Creating Models in Django</h2>
     <p>The application defines models for <code>Author</code> and <code>Book</code> to manage and store data in the database.</p>
-    <pre><code>
+<pre><code>
 from django.db import models
 
 class Author(models.Model):
