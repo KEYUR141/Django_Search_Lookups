@@ -12,15 +12,15 @@
 <div class="section">
     <h2>I. Creating Models in Django</h2>
     <p>The application defines models for <code>Author</code> and <code>Book</code> to manage and store data in the database.</p>
-<pre><code>
+<code>
 from django.db import models
 
 class Author(models.Model):
     name = models.CharField(max_length=100)
     DOB = models.DateField(blank=True, null=True)
 
-def __str__(self):
-    return self.name
+    def __str__(self):
+        return self.name
 
 class Book(models.Model):
     title = models.CharField(max_length=100)
@@ -30,7 +30,7 @@ class Book(models.Model):
 
     def __str__(self):
         return self.title
-</code></pre>
+</code>
 <div class="screenshot-placeholder">
     <img src="Author_Admin.png" alt="Author Admin Interface" width="800">
     <img src="Books_Admin.png" alt="Books Admin Interface" width="800">
