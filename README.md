@@ -62,9 +62,9 @@ def seed_db(n=100):
     print(f"{n} books created with {len(authors)} authors")
 ```
 <img src='Author_Admin.png' width='800'>
-<p>1.1 Author Model registered in the Django Admin.</p>
+<p>2.1 Author Model registered in the Django Admin.</p>
 <img src='Books_Admin.png' width='800'>
-<p>1.2 Books Model registered in the Django Admin</p>
+<p>2.2 Books Model registered in the Django Admin</p>
 
 ---
 
